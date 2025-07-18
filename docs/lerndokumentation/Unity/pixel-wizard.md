@@ -99,10 +99,6 @@ Wir haben eine **Kommunikationsmatrix** erstellt die genau festlegt wer wann mit
 
 Gerade bei so einem komplexen Projekt mit vier Leuten ist es wichtig dass alle wissen was läuft. Sonst arbeitet jeder vor sich hin und am Ende passt nichts zusammen.
 
-**📋 [Projektsteckbrief (PDF)](./assets/Projektsteckbrief_Paganini_Siegrist_Hally_Pilotti.pdf)**
-
-## Technische Umsetzung
-
 ### Projektstruktur
 
 ![Projektstruktur](./assets/Bildschirmfoto_2025-06-20_um_11.16.34.png)
