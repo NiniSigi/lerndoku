@@ -18,6 +18,7 @@ Pixel Wizard ist ein **2D Arena-Game** das man mit Freunden online spielen kann.
 ### Aktueller Stand
 
 **Was funktioniert schon:**
+
 - Multiplayer mit Lobby System
 - Spell casting (Zauber wirken)
 - Player Movement (Spieler Bewegung)
@@ -25,6 +26,7 @@ Pixel Wizard ist ein **2D Arena-Game** das man mit Freunden online spielen kann.
 - Interagierbare Map Teile
 
 **Was noch fehlt:**
+
 - Scoring System
 - Verkleinerung der Arena
 - Ausführliches Testing (da gibt's sicher noch viele Bugs)
@@ -38,8 +40,9 @@ Aber ehrlich gesagt ist das völlig okay - wir haben ja auch nicht erwartet dass
 Wir haben mit der **6-3-5 Methode** angefangen um überhaupt eine Idee zu finden. Das war echt cool - jeder hat 3 Ideen aufgeschrieben, dann haben wir die Blätter weitergegeben und die nächste Person hat die Ideen weiterentwickelt.
 
 Dabei kamen alle möglichen Ideen raus:
+
 - Sprachlern-Apps
-- Fitness-Apps 
+- Fitness-Apps
 - Vokabeltrainer
 - Quiz-Apps
 - Haushaltsbudget-Apps
@@ -73,6 +76,7 @@ Ehrlich gesagt war das am Anfang etwas mühsam - so viele Optionen durchzugehen.
 Wenn wir uns nicht einigen konnten haben wir die **Nutzwertanalyse** verwendet. Dabei gibst du verschiedenen Kriterien unterschiedliche Gewichtungen und rechnest dann aus welche Option am besten ist.
 
 **Wichtige Entscheidungen:**
+
 - **WASD Movement** statt Path Finding (4 vs 3.6 Punkte)
 - **Spells + Melee** als Kampfsystem
 
@@ -80,9 +84,9 @@ Das war schon etwas nerdy, aber hat funktioniert. Am Ende hatten wir objektive G
 
 ## Teamarbeit und Rollen
 
-
 Was ich richtig gut fand war dass wir klare Rollen definiert haben:
-- **Gino:** Projektmanager 
+
+- **Gino:** Projektmanager
 - **Nino:** Creative Director (ich)
 - **Ewan:** Senior Dev
 - **Patrick:** Head of Security
@@ -154,6 +158,7 @@ Am Ende hatten wir nur ein paar basic Zauber, aber das Grundsystem funktioniert.
 [🎬 Video: Prototyp Demo](./assets/Mein_Film_3.mp4)
 
 Unser aktueller Prototyp kann schon einiges:
+
 - Multiplayer funktioniert (meistens)
 - Spell casting ist implementiert
 - Spieler können sich in der Arena bewegen
@@ -161,6 +166,7 @@ Unser aktueller Prototyp kann schon einiges:
 - Interagierbare Objekte funktionieren
 
 **Was noch fehlt:**
+
 - Scoring System
 - Arena soll sich verkleinern
 - Viel Testing (da sind sicher noch Bugs drin)
@@ -209,4 +215,4 @@ Das nächste Mal würde ich den Scope kleiner halten und mehr Zeit für Testing 
 
 :::info Hinweis zu den Ressourcen
 Die Grafiken, PDFs und Videos in dieser Dokumentation stammen aus unserer ursprünglichen Projektdokumentation. Ich habe sie hier eingebunden um meine Lernerfahrungen zu illustrieren und damit andere nachvollziehen können, wie wir vorgegangen sind.
-::: 
+:::

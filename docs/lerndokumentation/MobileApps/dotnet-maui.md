@@ -25,20 +25,25 @@ Ein wichtiger Unterschied von unserem Projektzu anderen .NET MAUI projekten ist 
 ## Was macht .NET MAUI so besonders?
 
 ### 1. **C# als Programmiersprache**
+
 .NET MAUI nutzt C# als Programmiersprache, was für mich als .NET-Entwickler sehr vertraut war. C# ist eine moderne, objektorientierte Sprache mit vielen mächtigen Features wie LINQ, async/await und generische Typen. Das war für mich ein grosser Vorteil weil ich C# schon kannte.
 
 ### 2. **Native Performance**
+
 .NET MAUI kompiliert zu nativen Code für jede Plattform. Das bedeutet die Apps haben die gleiche Performance wie nativ entwickelte Apps. Das ist echt cool weil man nicht auf Performance verzichten muss.
 
 ### 3. **MVVM Pattern**
+
 .NET MAUI ist speziell für das MVVM (Model-View-ViewModel) Pattern optimiert. Das macht die Architektur sauber und wartbar. Das war für mich neu aber die Bücher von Pani haben mir das sehr gut erklärt.
 
 ## MVVM Pattern erklärt
 
 ### Was ist MVVM?
+
 MVVM (Model-View-ViewModel) ist ein Architekturpattern das die UI-Logik von der Geschäftslogik trennt. Es besteht aus drei Hauptkomponenten:
 
 #### **Model**
+
 Das Model repräsentiert die Daten und Geschäftslogik. Es enthält keine UI-spezifischen Informationen.
 
 ```csharp
@@ -52,6 +57,7 @@ public class Customer
 ```
 
 #### **View**
+
 Die View ist die UI-Schicht. Sie zeigt die Daten an und leitet Benutzerinteraktionen an das ViewModel weiter.
 
 ```csharp
@@ -66,26 +72,27 @@ public partial class CustomerPage : ContentPage
 ```
 
 #### **ViewModel**
+
 Das ViewModel ist die Verbindung zwischen Model und View. Es enthält die Präsentationslogik und verwaltet den Zustand der View.
 
 ```csharp
 public class CustomerViewModel : ObservableObject
 {
     private Customer _customer;
-    
+
     public Customer Customer
     {
         get => _customer;
         set => SetProperty(ref _customer, value);
     }
-    
+
     public ICommand SaveCommand { get; }
-    
+
     public CustomerViewModel()
     {
         SaveCommand = new Command(ExecuteSave);
     }
-    
+
     private void ExecuteSave()
     {
         // Geschäftslogik hier
@@ -94,18 +101,21 @@ public class CustomerViewModel : ObservableObject
 ```
 
 ### Vorteile von MVVM
+
 - **Trennung der Zuständigkeiten**: Jede Komponente hat eine klare Aufgabe
 - **Testbarkeit**: ViewModels können einfach unit-getestet werden
 - **Wiederverwendbarkeit**: ViewModels können in verschiedenen Views verwendet werden
 - **Maintainability**: Code ist sauber strukturiert und leicht zu warten
 
 Das MVVM Pattern war für mich erstmal verwirrend aber durch die Bücher von Pani habe ich es schnell verstanden. Es macht den Code viel sauberer und einfacher zu warten.
-Jedoch gibt es auch heute noch momente bei denen ich es Überhaubt nicht versthehe. 
+Jedoch gibt es auch heute noch momente bei denen ich es Überhaubt nicht versthehe.
 
 ## .NET MAUI Grundlagen
 
 ### Projektstruktur
+
 So sieht eine typische .NET MAUI Projektstruktur ohne Code First ansatz aus:
+
 ```
 MyApp/
 ├── Platforms/
@@ -123,13 +133,14 @@ MyApp/
 ```
 
 ### Code-First UI Beispiel
+
 ```csharp
 public partial class MainPage : ContentPage
 {
     public MainPage()
     {
         InitializeComponent();
-        
+
         Content = new StackLayout
         {
             Children =
@@ -152,12 +163,13 @@ public partial class MainPage : ContentPage
 ```
 
 ### Data Binding
+
 ```csharp
 // ViewModel
 public class MainViewModel : ObservableObject
 {
     private string _title;
-    
+
     public string Title
     {
         get => _title;
@@ -170,6 +182,7 @@ public class MainViewModel : ObservableObject
 ```
 
 ### Navigation
+
 ```csharp
 // Navigation zu einer neuen Seite
 await Navigation.PushAsync(new DetailPage());
@@ -179,6 +192,7 @@ await Navigation.PopAsync();
 ```
 
 ### Dependency Injection
+
 ```csharp
 // In MauiProgram.cs
 builder.Services.AddSingleton<ICustomerService, CustomerService>();
@@ -194,19 +208,25 @@ public CustomerViewModel(ICustomerService customerService)
 ## Nützliche Ressourcen
 
 ### Offizielle Dokumentation
+
 Das sind die wichtigsten Links die ich benutzt habe:
+
 - [.NET MAUI Documentation](https://docs.microsoft.com/en-us/dotnet/maui/)
 - [C# Language Reference](https://docs.microsoft.com/en-us/dotnet/csharp/)
 - [MVVM Pattern Guide](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm)
 
 ### Community-Ressourcen
+
 Die Community ist echt hilfreich:
+
 - [.NET MAUI Community Toolkit](https://github.com/CommunityToolkit/Maui)
 - [NuGet.org](https://www.nuget.org/) - Hier findest du alle Pakete
 - [.NET MAUI Samples](https://github.com/dotnet/maui-samples)
 
 ### Lernressourcen
+
 Das hat mir beim Lernen geholfen:
+
 - [.NET MAUI Tutorials](https://docs.microsoft.com/en-us/dotnet/maui/tutorials/)
 - [.NET MAUI YouTube Channel](https://www.youtube.com/c/dotnet)
 - [.NET MAUI Workshop](https://github.com/dotnet-presentations/dotnet-maui-workshop)
